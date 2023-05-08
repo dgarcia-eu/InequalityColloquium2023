@@ -1,6 +1,6 @@
 ---
 title: "Analyzing the language of populism in social media and parliamentary speeches"
-author: "David Garcia <br> *University of Konstanz, CSH Vienna*"
+author: "David Garcia <br> *University of Konstanz, CSH Vienna* <br> slides at: dgarcia.eu/inequality2023"
 date: "2023"
 output:
   xaringan::moon_reader:
