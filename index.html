@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Analyzing the language of populism in social media and parliamentary speeches</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="David Garcia   University of Konstanz, CSH Vienna" />
+    <meta name="date" content="2023-01-01" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="libs/footer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Analyzing the language of populism in social media and parliamentary speeches
+]
+.author[
+### David Garcia <br> <em>University of Konstanz, CSH Vienna</em>
+]
+.date[
+### 2023
+]
+
+---
+
+
+
+
+
+
+
+layout: true
+&lt;div class="my-footer"&gt;&lt;span&gt;David Garcia - Politics of Inequality Colloquium&lt;/span&gt;&lt;/div&gt; 
+
+---
+
+background-image: url(figures/AboutUS.svg)
+background-size: 98%
+
+---
+
+# Our Research Topics
+![:scale 90%](figures/Topics2-2.svg)
+---
+
+background-image: url(figures/VennV2-1.svg)
+background-size: 97%
+---
+background-image: url(figures/VennV2.svg)
+background-size: 97%
+
+---
+
+# Summary
+
+## 1. Computational Social Science and Inequality
+
+## 2. Measuring Ontologies of Truth from Text
+
+## 3. Populism and polarization in the US congress
+
+---
+
+background-image: url(figures/FGD.svg)
+background-size: 98%
+---
+
+# CSS and the Politics of Inequality
+
+.pull-left[.center[![:scale 55%](figures/JRC.png)]]
+
+.pull-right[![:scale 90%](figures/Ineq1.svg)]
+
+
+&lt;p style="font-family: times, serif; font-size:20pt; font-style:italic"&gt;
+&lt;a href=https://doi.org/10.2760/709177&gt;  Technology and Democracy: Understanding the influence of online technologies on political behaviour and decision-making. Lewandowsky et al (2020)&lt;/a&gt;
+&lt;/p&gt;
+---
+
+
+# CSS and the Politics of Inequality
+
+.pull-left[.center[![:scale 100%](figures/Mech.png)]]
+.pull-right[![:scale 100%](figures/Ineq2.svg)]
+
+
+&lt;p style="font-family: times, serif; font-size:20pt; font-style:italic"&gt;
+&lt;a href=https://psyarxiv.com/cxa9u&gt;  Social drivers and algorithmic mechanisms on digital media. Hannah Metzler, David Garcia. Psyarxiv preprint (2022)&lt;/a&gt;
+&lt;/p&gt;
+
+---
+
+
+# CSS and the Politics of Inequality
+
+.pull-left[.center[![:scale 70%](figures/politnetz.png)]]
+
+.pull-right[![:scale 95%](figures/Ineq3.svg)]
+
+&lt;p style="font-family: times, serif; font-size:20pt; font-style:italic"&gt;
+
+&lt;a href=https://onlinelibrary.wiley.com/doi/epdf/10.1002/poi3.82&gt;Ideological and Temporal Components of Network Polarization in Online Political Participatory Media. Garcia et al, Policy &amp; Internet (2015)&lt;/a&gt;
+
+&lt;/br&gt;
+&lt;a href=https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-015-0042-4&gt;Sentiment cascades in the 15M movement. Alvarez, Garcia, Moreno &amp; Schweitzer, EPJ Data Science (2015)&lt;/a&gt;
+&lt;/p&gt;
+---
+
+
+# CSS and the Politics of Inequality
+
+.pull-left[
+Analysis of parliamentary speeches and other political documents
+- E.g. relationship between social language and approval
+
+- Several datasets available: US, UK, German, Hungary...
+
+- Today's example: analysis of populism language in the US parliament and its relationship to polarization
+]
+.pull-right[![:scale 100%](figures/Ineq4.svg)]
+
+
+---
+# CSS and the Politics of Inequality
+
+.pull-left[
+Social media as *ad hoc publics* with citizens, politicians, and media
+
+- Agenda setting: Previous work shows how average users lead media and politicians on Twitter
+
+- Twitter data available for politicians in the UK, US, DE. Other platforms such as Reddit, Der Standard, public FB groups (crowdtangle)
+
+- Today's example: Language of honesty in Twitter politicians
+
+]
+.pull-right[![:scale 100%](figures/Ineq5.svg)]
+
+
+---
+
+# Measuring Ontologies of Truth from Text
+
+## 1. Computational Social Science and Inequality
+
+## *2. Measuring Ontologies of Truth from Text*
+
+## 3. Populism and polarization in the US
+
+---
+
+# Honesty and truth in politics
+
+&gt;  I don't think I'll do research on Fake News (Garcia, 2016)
+--
+
+
+.center[![:scale 70%](figures/Trump.png)]
+
+## Repeated polling showed 3/4 of Republicans considered Trump to be honest
+---
+
+# Populism and Truth 
+
+Populism defined as a political communication portraying a  Manichaen binary conflict between virtuous "people" and "elite" (or "others")
+  - *Why populism is troubling for democratic communication, Silvio Waisbord, Communication Culture &amp; Critique (2018)*
+  - can be an entirely artificial construction and be reshaped as needed
+  - negates pluralism and goes against democratic principles
+  
+Corollary is the affirmation of "common sense" of people against "lies" of elites
+  &gt; Just remember, what you're seeing and what you’re reading is not what's happening (U.S. President Donald Trump, 24 July 2018)
+
+---
+
+# Post post-truth
+
+&gt; The result of a consistent and total substitution of lies for factual truth is not that the lies will now be accepted as truth, and the truth be defamed as lies, but that the sense by which we take our bearings in the real world—and the category of truth vs. falsehood is among the mental means to this end—is being destroyed (Hannah Arendt, 1967).
+
+- **Deliberate lies**: Carefully constructed fabrications or obfuscations intended to protect and promote material or ideological interests with a coherent agenda
+  - WMDs in Irak as an example. Focus of fake news research
+- **Shock and chaos**
+  - Regime of falsehoods that seems to have given up on the notion of a shared reality and instead relies on an extreme form of constructivism in which "truth" is entirely in the eye of the beholder
+  - Trump's incoherent lies as an example
+
+
+---
+
+# Two ontologies of truth
+
+*Hannah Arendt and the contemporary social construction of conspiracy theorists. Stephan Lewandowsky (2020)*
+
+.pull-left[ 
+- **Truth and honesty in a democracy** 
+  - relies on evidence
+  - veracity is key
+  - truth seeking is the goal
+]
+
+.pull-right[
+- **Populist honesty and truth**
+  - relies on authenticity
+  - intuition and feelings are relevant
+  - belief speaking is key
+]
+
+- Can we identify those different "truths" in political speech?  
+- If so, how do the components relate to accuracy of (shared) information?
+
+We want to go beyond *post-truth* and study the two ontologies over the last two centuries but at the timescale of social media as well
+
+---
+
+background-image: url(figures/PRODEMINFO.svg)
+background-size: 98%
+
+---
+background-image: url(figures/DDR.svg)
+background-size: 98%
+---
+
+## Previous application to honesty on Twitter
+
+.center[![:scale 95%](figures/Honesty.svg)]
+[From alternative conceptions of honesty to alternative facts in communications by U.S. politicians
+J. Lasser, S. Aroyehun, F. Carrella, A. Simchon, D. Garcia, S. Lewandowsky (Preprint)](https://arxiv.org/abs/2208.10814)
+
+---
+
+## Belief-speaking and truth-seeking dictionaries
+
+1. Starting with a basic list of words for the ends of the truth-populism spectrum
+  - Truth-seeking words: reality, examine, evidence, fact, proof...
+  - Belief-speaking words: believe, feel, intuition, "common sense"...
+
+2. Expanding word lists with Fastext and LEXpander (colexification networks)
+
+3. Cleaning word lists with crowdsourced ratings. Result: 49 truth, 35 belief
+.center[![](figures/Survey.png)]
+
+---
+
+# Annotating truth and populism in text
+
+- Crowdsourced annotation of tweets by politicians
+  - Random sample (N=300) stratified by similarity with dictionaries
+  - Second sample: 15 random tweets from 10 republicans and 10 democrats
+- 175 raters from the US recruited through Prolific
+- Minimum of 5 ratings per tweet
+.center[![:scale 83%](figures/Prolific.png)]
+
+---
+
+## Validation of unsupervised truth-populism score
+
+- Truth and populism ratings are correlated: `\(\rho=-0.49\)` `\([-0.55,-0.43]\)`
+
+- Truth-populism as a rating has the highest `\(ICC= 0.52\)` `\([0.49,0.56]\)`
+
+- **Ground truth:** difference between mean truth rating and mean populism rating
+
+- **Unsupervised estimation:** For each tweet, we calculate a truth-populism as the difference between the Z-scored DDR similarities with the truth and with the populism dictionaries
+
+  - Correlation for random tweets: `\(r_{rnd}= 0.599\)`, `\([0.521,0.668], p&lt;0.001\)`
+  - Correlation for politician means: `\(r_{pol}=0.449\)`, `\([0.008, 0.744], p=0.047\)`
+
+---
+
+# Error analysis and propagation
+.pull-left[![](figures/QQ.svg)]
+.pull-right[- Normally distributed residuals
+- Low heteroskedasticity
+- sd of residuals: 0.8
+- sd of truth-populism ratings: 1
+- higher sd for politicians sample (0.88 residuals vs 1.06 ratings) 
+- Similar for both parties:
+  - 0.87 (Dem) 0.89 (Rep)
+]
+- Error propagation in statistical analysis:
+- When computing the mean truth-populism rating of a sample:
+  - 10000 bootstrap samples with replacement 
+  - To each element in each sample: add `\(N(\mu=0, \sigma^2=0.8^2)\)` error
+
+---
+
+# Populism and polarization in the US
+
+## 1. Computational Social Science and Inequality
+
+## 2. Measuring Ontologies of Truth from Text
+
+## *3. Populism and polarization in the US*
+
+---
+
+## Long and fast dynamics in two timescales
+
+**US Congress speech transcripts**
+- Analysis at the sentence level: each sentence has a score
+- 84,568,012 sentences (1873-2022)
+- We use DW-NOMINATE polarization estimator (voteview) as mean polarization of House and Senate
+- [J. Lewis, K. Poole, H. Rosenthal, A. Boche, A. Rudkin, and L. Sonnet (2023). Voteview: Congressional Roll-Call Votes Database.](https://voteview.com/)
+
+**Twitter US politicians data**
+- Dataset on US Congress members (114th-118th)
+- 1278 users, 220 unavailable due to deletion or private accounts
+- Total tweets: 5,914,107. After removing RT, non-text, duplicates: 3,897,032 
+- Accounts matched to individual candidates and parties
+---
+
+.center[![](figures/US_twitter_party.svg)]
+---
+
+.center[![](figures/US_congress_party.svg)]
+---
+
+.center[![](figures/US_congress_voteview_nosmooth.svg)]
+---
+
+## Polarization and populism
+
+.center[![:scale 73%](figures/US_congress_voteview_nosmooth-3.svg)]
+---
+
+# Summary
+
+- **Populism and ontologies of truth**
+  - Beyond misinformation: truth-seeking versus belief-speaking
+  - New populism: Shock and chaos versus deliberate lies
+
+
+- **Text analysis to detect honesty components related to populism**
+  - Distributed Dictionary Representations to smooth dictionaries
+  - Validated word lists and document-level metric
+  - Error measurement and propagation into statistical analysis
+
+
+- **Application to US Congress and Twitter politicians**
+  - Spike of truth-seeking during pandemic
+  - Switching language between ruling party and opposition
+  - Republicans in all-time low since 2010s
+  - Polarization seems to lead populism
+
+---
+
+# Next steps and work to do
+
+- **Dealing with congress vacation**
+  - How to deal with months when a congress is not in session but Twitter is?
+- **Validation in congress text + UK**
+  - Need to annotate congress sentences. Can we use Prolific?
+  - Any issues of temporal validity? Are there periods to sample?
+- **How to continue considering error in measurement?**
+- **Application to average Twitter users**
+  - Recently finished survey answering ontology of truth questionnaire
+- **Hammer looking for nails**
+  - Do you have research questions we can address with these methods?
+  - How can we apply this to study inequality?
+
+.center[**More at: [www.dgarcia.eu](https://dgarcia.eu) and [@dgarcia_eu](https://twitter.com/dgarcia_eu)**  
+
+**Thanks for listening!**
+]
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="libs/perc.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
