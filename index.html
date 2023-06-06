@@ -3,7 +3,7 @@
   <head>
     <title>Analyzing the language of populism in social media and parliamentary speeches</title>
     <meta charset="utf-8" />
-    <meta name="author" content="David Garcia   University of Konstanz, CSH Vienna   slides at: dgarcia.eu/inequality2023" />
+    <meta name="author" content="Segun Aroyehun" />
     <meta name="date" content="2023-01-01" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
@@ -17,7 +17,7 @@ class: center, middle, inverse, title-slide
 # Analyzing the language of populism in social media and parliamentary speeches
 ]
 .author[
-### David Garcia <br> <em>University of Konstanz, CSH Vienna</em> <br> slides at: dgarcia.eu/inequality2023
+### Segun Aroyehun
 ]
 .date[
 ### 2023
@@ -32,129 +32,18 @@ class: center, middle, inverse, title-slide
 
 
 layout: true
-&lt;div class="my-footer"&gt;&lt;span&gt;David Garcia - Politics of Inequality Colloquium&lt;/span&gt;&lt;/div&gt; 
-
----
-
-background-image: url(figures/AboutUS.svg)
-background-size: 98%
-
----
-
-# Our Research Topics
-![:scale 90%](figures/Topics2-2.svg)
----
-
-background-image: url(figures/VennV2-1.svg)
-background-size: 97%
----
-background-image: url(figures/VennV2.svg)
-background-size: 97%
+&lt;div class="my-footer"&gt;&lt;span&gt;Segun Aroyehun and David Garcia - Politics of Inequality&lt;/span&gt;&lt;/div&gt; 
 
 ---
 
 # Summary
 
-## 1. Computational Social Science and Inequality
+## 1. Measuring Ontologies of Truth from Text
 
-## 2. Measuring Ontologies of Truth from Text
-
-## 3. Populism and polarization in the US congress
-
----
-
-background-image: url(figures/FGD.svg)
-background-size: 98%
----
-
-# CSS and the Politics of Inequality
-
-.pull-left[.center[![:scale 55%](figures/JRC.png)]]
-
-.pull-right[![:scale 90%](figures/Ineq1.svg)]
-
-
-&lt;p style="font-family: times, serif; font-size:20pt; font-style:italic"&gt;
-&lt;a href=https://doi.org/10.2760/709177&gt;  Technology and Democracy: Understanding the influence of online technologies on political behaviour and decision-making. Lewandowsky et al (2020)&lt;/a&gt;
-&lt;/p&gt;
----
-
-
-# CSS and the Politics of Inequality
-
-.pull-left[.center[![:scale 100%](figures/Mech.png)]]
-.pull-right[![:scale 100%](figures/Ineq2.svg)]
-
-
-&lt;p style="font-family: times, serif; font-size:20pt; font-style:italic"&gt;
-&lt;a href=https://psyarxiv.com/cxa9u&gt;  Social drivers and algorithmic mechanisms on digital media. Hannah Metzler, David Garcia. Psyarxiv preprint (2022)&lt;/a&gt;
-&lt;/p&gt;
-
----
-
-
-# CSS and the Politics of Inequality
-
-.pull-left[.center[![:scale 70%](figures/politnetz.png)]]
-
-.pull-right[![:scale 95%](figures/Ineq3.svg)]
-
-&lt;p style="font-family: times, serif; font-size:20pt; font-style:italic"&gt;
-
-&lt;a href=https://onlinelibrary.wiley.com/doi/epdf/10.1002/poi3.82&gt;Ideological and Temporal Components of Network Polarization in Online Political Participatory Media. Garcia et al, Policy &amp; Internet (2015)&lt;/a&gt;
-
-&lt;/br&gt;
-&lt;a href=https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-015-0042-4&gt;Sentiment cascades in the 15M movement. Alvarez, Garcia, Moreno &amp; Schweitzer, EPJ Data Science (2015)&lt;/a&gt;
-&lt;/p&gt;
----
-
-
-# CSS and the Politics of Inequality
-
-.pull-left[
-Analysis of parliamentary speeches and other political documents
-- E.g. relationship between social language and approval
-
-- Several datasets available: US, UK, German, Hungary...
-
-- Today's example: analysis of populism language in the US parliament and its relationship to polarization
-]
-.pull-right[![:scale 100%](figures/Ineq4.svg)]
-
-
----
-# CSS and the Politics of Inequality
-
-.pull-left[
-Social media as *ad hoc publics* with citizens, politicians, and media
-
-- Agenda setting: Previous work shows how average users lead media and politicians on Twitter
-
-- Twitter data available for politicians in the UK, US, DE. Other platforms such as Reddit, Der Standard, public FB groups (crowdtangle)
-
-- Today's example: Language of honesty in Twitter politicians
-
-]
-.pull-right[![:scale 100%](figures/Ineq5.svg)]
-
-
----
-
-# Measuring Ontologies of Truth from Text
-
-## 1. Computational Social Science and Inequality
-
-## *2. Measuring Ontologies of Truth from Text*
-
-## 3. Populism and polarization in the US
-
+## 2. Populism and polarization in the US congress
 ---
 
 # Honesty and truth in politics
-
-&gt;  I don't think I'll do research on Fake News (Garcia, 2016)
---
-
 
 .center[![:scale 70%](figures/Trump.png)]
 
@@ -219,14 +108,6 @@ background-image: url(figures/DDR.svg)
 background-size: 98%
 ---
 
-## Previous application to honesty on Twitter
-
-.center[![:scale 95%](figures/Honesty.svg)]
-[From alternative conceptions of honesty to alternative facts in communications by U.S. politicians
-J. Lasser, S. Aroyehun, F. Carrella, A. Simchon, D. Garcia, S. Lewandowsky (Preprint)](https://arxiv.org/abs/2208.10814)
-
----
-
 ## Belief-speaking and truth-seeking dictionaries
 
 1. Starting with a basic list of words for the ends of the truth-populism spectrum
@@ -237,6 +118,14 @@ J. Lasser, S. Aroyehun, F. Carrella, A. Simchon, D. Garcia, S. Lewandowsky (Prep
 
 3. Cleaning word lists with crowdsourced ratings. Result: 49 truth, 35 belief
 .center[![](figures/Survey.png)]
+
+---
+
+## Previous application to honesty on Twitter
+
+.center[![:scale 95%](figures/Honesty.svg)]
+[From alternative conceptions of honesty to alternative facts in communications by U.S. politicians
+J. Lasser, S. Aroyehun, F. Carrella, A. Simchon, D. Garcia, S. Lewandowsky (Preprint)](https://arxiv.org/abs/2208.10814)
 
 ---
 
@@ -285,11 +174,9 @@ J. Lasser, S. Aroyehun, F. Carrella, A. Simchon, D. Garcia, S. Lewandowsky (Prep
 
 # Populism and polarization in the US
 
-## 1. Computational Social Science and Inequality
+## 1. Measuring Ontologies of Truth from Text
 
-## 2. Measuring Ontologies of Truth from Text
-
-## *3. Populism and polarization in the US*
+## 2. Populism and polarization in the US congress
 
 ---
 
@@ -321,6 +208,9 @@ J. Lasser, S. Aroyehun, F. Carrella, A. Simchon, D. Garcia, S. Lewandowsky (Prep
 
 .center[![:scale 73%](figures/US_congress_voteview_nosmooth-3.svg)]
 ---
+.center[![:scale 100%](figures/US_congress_personal_wealthtop1pct_polarization.svg)]
+---
+
 
 # Summary
 
@@ -356,8 +246,6 @@ J. Lasser, S. Aroyehun, F. Carrella, A. Simchon, D. Garcia, S. Lewandowsky (Prep
 - **Hammer looking for nails**
   - Do you have research questions we can address with these methods?
   - How can we apply this to study inequality?
-
-.center[**More at: [www.dgarcia.eu](https://dgarcia.eu) and [@dgarcia_eu](https://twitter.com/dgarcia_eu)**  
 
 **Thanks for listening!**
 ]

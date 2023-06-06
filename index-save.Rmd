@@ -1,6 +1,6 @@
 ---
 title: "Analyzing the language of populism in social media and parliamentary speeches"
-author: "Segun Aroyehun"
+author: "David Garcia <br> *University of Konstanz, CSH Vienna* <br> slides at: dgarcia.eu/inequality2023"
 date: "2023"
 output:
   xaringan::moon_reader:
@@ -33,18 +33,129 @@ options(htmltools.dir.version = FALSE)
 
 
 layout: true
-<div class="my-footer"><span>Segun Aroyehun and David Garcia - Politics of Inequality</span></div> 
+<div class="my-footer"><span>David Garcia - Politics of Inequality Colloquium</span></div> 
+
+---
+
+background-image: url(figures/AboutUS.svg)
+background-size: 98%
+
+---
+
+# Our Research Topics
+![:scale 90%](figures/Topics2-2.svg)
+---
+
+background-image: url(figures/VennV2-1.svg)
+background-size: 97%
+---
+background-image: url(figures/VennV2.svg)
+background-size: 97%
 
 ---
 
 # Summary
 
-## 1. Measuring Ontologies of Truth from Text
+## 1. Computational Social Science and Inequality
 
-## 2. Populism and polarization in the US congress
+## 2. Measuring Ontologies of Truth from Text
+
+## 3. Populism and polarization in the US congress
+
+---
+
+background-image: url(figures/FGD.svg)
+background-size: 98%
+---
+
+# CSS and the Politics of Inequality
+
+.pull-left[.center[![:scale 55%](figures/JRC.png)]]
+
+.pull-right[![:scale 90%](figures/Ineq1.svg)]
+
+
+<p style="font-family: times, serif; font-size:20pt; font-style:italic">
+<a href=https://doi.org/10.2760/709177>  Technology and Democracy: Understanding the influence of online technologies on political behaviour and decision-making. Lewandowsky et al (2020)</a>
+</p>
+---
+
+
+# CSS and the Politics of Inequality
+
+.pull-left[.center[![:scale 100%](figures/Mech.png)]]
+.pull-right[![:scale 100%](figures/Ineq2.svg)]
+
+
+<p style="font-family: times, serif; font-size:20pt; font-style:italic">
+<a href=https://psyarxiv.com/cxa9u>  Social drivers and algorithmic mechanisms on digital media. Hannah Metzler, David Garcia. Psyarxiv preprint (2022)</a>
+</p>
+
+---
+
+
+# CSS and the Politics of Inequality
+
+.pull-left[.center[![:scale 70%](figures/politnetz.png)]]
+
+.pull-right[![:scale 95%](figures/Ineq3.svg)]
+
+<p style="font-family: times, serif; font-size:20pt; font-style:italic">
+
+<a href=https://onlinelibrary.wiley.com/doi/epdf/10.1002/poi3.82>Ideological and Temporal Components of Network Polarization in Online Political Participatory Media. Garcia et al, Policy & Internet (2015)</a>
+
+</br>
+<a href=https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-015-0042-4>Sentiment cascades in the 15M movement. Alvarez, Garcia, Moreno & Schweitzer, EPJ Data Science (2015)</a>
+</p>
+---
+
+
+# CSS and the Politics of Inequality
+
+.pull-left[
+Analysis of parliamentary speeches and other political documents
+- E.g. relationship between social language and approval
+
+- Several datasets available: US, UK, German, Hungary...
+
+- Today's example: analysis of populism language in the US parliament and its relationship to polarization
+]
+.pull-right[![:scale 100%](figures/Ineq4.svg)]
+
+
+---
+# CSS and the Politics of Inequality
+
+.pull-left[
+Social media as *ad hoc publics* with citizens, politicians, and media
+
+- Agenda setting: Previous work shows how average users lead media and politicians on Twitter
+
+- Twitter data available for politicians in the UK, US, DE. Other platforms such as Reddit, Der Standard, public FB groups (crowdtangle)
+
+- Today's example: Language of honesty in Twitter politicians
+
+]
+.pull-right[![:scale 100%](figures/Ineq5.svg)]
+
+
+---
+
+# Measuring Ontologies of Truth from Text
+
+## 1. Computational Social Science and Inequality
+
+## *2. Measuring Ontologies of Truth from Text*
+
+## 3. Populism and polarization in the US
+
 ---
 
 # Honesty and truth in politics
+
+>  I don't think I'll do research on Fake News (Garcia, 2016)
+--
+
 
 .center[![:scale 70%](figures/Trump.png)]
 
@@ -175,9 +286,11 @@ J. Lasser, S. Aroyehun, F. Carrella, A. Simchon, D. Garcia, S. Lewandowsky (Prep
 
 # Populism and polarization in the US
 
-## 1. Measuring Ontologies of Truth from Text
+## 1. Computational Social Science and Inequality
 
-## 2. Populism and polarization in the US congress
+## 2. Measuring Ontologies of Truth from Text
+
+## *3. Populism and polarization in the US*
 
 ---
 
@@ -209,9 +322,6 @@ J. Lasser, S. Aroyehun, F. Carrella, A. Simchon, D. Garcia, S. Lewandowsky (Prep
 
 .center[![:scale 73%](figures/US_congress_voteview_nosmooth-3.svg)]
 ---
-.center[![:scale 100%](figures/US_congress_personal_wealthtop1pct_polarization.svg)]
----
-
 
 # Summary
 
@@ -247,6 +357,8 @@ J. Lasser, S. Aroyehun, F. Carrella, A. Simchon, D. Garcia, S. Lewandowsky (Prep
 - **Hammer looking for nails**
   - Do you have research questions we can address with these methods?
   - How can we apply this to study inequality?
+
+.center[**More at: [www.dgarcia.eu](https://dgarcia.eu) and [@dgarcia_eu](https://twitter.com/dgarcia_eu)**  
 
 **Thanks for listening!**
 ]
